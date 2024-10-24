@@ -1,0 +1,213 @@
+\documentclass[letterpaper,1pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rohit Dadgal} \\ \vspace{1pt}
+    \small +91-9284954375  $|$ \href{mailto:rohit.dadgal21@gmail.com}{\underline{rohit.dadgal21@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/rohitdadgal/}{\underline{Linkedin}} $|$
+    \href{https://github.com/rohitd2103}{\underline{Github}} $|$
+    \href{https://leetcode.com/u/Rohit2103/}{\underline{Leetcode}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Prof. Ram Meghe College of Engineering and Management}{Amravati, MH}
+      {Bachelors in Computer Science and Engineering - \textbf{CGPA: 7.2}(upto 6th Sem)}{2021 - 2025}
+    \resumeSubheading
+      {Vinayak Vidyamandir}{Amravati, MH}
+      {Maharashtra State Board - \textbf{Percentage:82\%} }{ 2019 - 2021}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, Python, C, SQL, JavaScript, HTML/CSS, Kotlin } \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Pandas, NumPy, Matplotlib, SkLearn  } \\
+     \textbf{Technologies \& Tools}{: Firebase, Git, GCP, Azure, VS Code, Visual Studio, PyCharm, IntelliJ, Android Studio} \\
+     \textbf{Core Competencies}{: Data Structures, Algorithms, Object-Oriented Programming (OOP), Software Engineering, App Development, Operating Systems (OS), Database Management Systems (DBMS), Competitive Programming}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coding Ninjas}{Nov 2023 -- Dec 2023}
+      {Teaching Assistant for DSA in C++}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Assisted 60+} students in learning \textbf{C++ and Data Structures.}}
+        \resumeItem{Took Doubt Sessions and resolved more than \textbf{400} doubts with an average rating of \textbf{4.6}.}
+        \resumeItem{Debugged Codes and helped students with their assignments and problems.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{1) Medical Diagnosis Extraction} $|$ \emph{Python, Azure Services, Gliner-Spacy}}{\href{https://github.com/HackRx50/PS2-Ctrl-Alt-Elite}{\underline{Github}}}
+    \resumeItemListStart
+      \resumeItem{ Developed an automated pipeline using Azure Form Recognizer and Tesseract OCR to extract\textbf{ handwritten medical diagnoses} from forms and prescriptions, \textbf{achieving 85\% accuracy} in medical claims processing.}
+      \resumeItem{Applied post-processing with \textbf{PyEnchant} for spelling corrections and medical abbreviation expansion; implemented \textbf{GLiNER SpaCy NER} for disease and drug entity extraction.}
+      \resumeItem{ Mapped diagnoses to \textbf{ICD-10 codes}, automating medical documentation and streamlining insurance claims approvals.}
+    
+    \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {\textbf{2) 3D Brain Atlas} $|$ \emph{Python, CSS, Azure Services}}{\href{https://github.com/rohitd2103/brain_atlas}{\underline{Github}}}
+    \resumeItemListStart
+      \resumeItem{ Developed a 3D Brain Atlas tool that enables seamless \textbf{visualization and annotation} of anatomical brain regions, \textbf{accelerating medical imaging analysis and diagnostics by 30\%}.}
+      \resumeItem{Integrated Azure Cognitive Services and storage solutions, improving \textbf{data processing efficiency by 40\%} and \textbf{enhancing healthcare decision-making accuracy by 25\%}.}
+      \resumeItem{ Led a team of 3 developers to enhance 3D visualization features, i\textbf{ncreasing clinician engagement by 35\%} and improving usability.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{3) Reminder Scheduler App} $|$ \emph{Kotlin, Firebase}}{\href{https://github.com/rohitd2103/Reminder-Scheduler}{\underline{Github}}}
+    \resumeItemListStart
+      \resumeItem{ Developed a robust mobile application using \textbf{Kotlin} to efficiently manage daily tasks and send timely notifications.}
+      \resumeItem{Leveraged \textbf{Firebase} for reliable data storage, real-time updates, and user authentication, ensuring seamless performance and user experience.}
+      \resumeItem{Engineered proactive reminder notifications using \textbf{Firebase Cloud Messaging (FCM)} to improve user engagement and task completion rates.}
+    \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{3) Sorting Visualizer} $|$ \emph{HTML, CSS, JS, Azure}}{\href{https://salmon-cliff-0d3785c00.4.azurestaticapps.net/}{\underline{Live}}, \href{https://github.com/rohitd2103/Sorting-_Visualizer}{\underline{Github}}}
+  %   \resumeItemListStart
+  %     \resumeItem{The Sorting Visualizer is a live interface that demonstrates sorting algorithms, including \textbf{Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort.}}
+  %     \resumeItem{Enabled dynamic list adjustments and comparison speed control, increasing \textbf{user engagement by 40\%} and \textbf{reducing processing time by 25\%} through features like list randomization.}
+  %     \resumeItem{Users can choose their preferred sorting method from the available options.}
+  %   \resumeItemListEnd
+
+    %  \resumeProjectHeading
+    % {\textbf{4) Rock/Mine Prediction} $|$ \emph{Python, Jupyter Notebook}}{\href{https://github.com/rohitd2103/Rock_mine-Prediction}{\underline{Github}}}
+    % \resumeItemListStart
+    %   \resumeItem{A Machine Learning Model which \textbf{SONAR data} and helps underground submarine to predict whether the object is Rock or a mine.}
+    %   \resumeItem{Uses Logistic Regression and uses \textbf{80-90\%} of training-data and \textbf{10–20\%} will be used to test-data.}
+    %   \resumeItem{Conducted extensive model validation and performance tuning, achieving high accuracy in \textbf{object classification}, and deployed the model in a Jupyter Notebook environment for ease of use and demonstration.}
+      
+    % \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements and Certifications}
+\resumeItemListStart
+
+\resumeItem{\textbf{Winner of Android Campus Fest 2023 Appathon, organized by Google Developer}s for designing a top-performing Android application.}
+\resumeItem{Finalist in \textbf{HackRx 5.0 (Bajaj Finserv)}, selected from 700+ teams.}
+\resumeItem{\textbf{Ranked in the top 51\%} on LeetCode with a peak contest rating of 1,474. \href{https://leetcode.com/u/Rohit2103/}{\underline{(Leetcode)}}}
+\resumeItemListEnd
+
+%-----------Certifications-----------
+\section{Certifications}
+\resumeItemListStart
+\resumeItem{Certified \textbf{Google Cloud Digital Leader}. \href{https://www.credential.net/d4c3c54a-c5fe-4555-a176-a8de284c57cf}{\underline{(Credentials)}}}
+\resumeItem{Achieved \textbf{72\%} in \textbf{The Joy of Computing} exam by NPTEL.}
+
+  
+\resumeItemListEnd
+
+%-----------POSITIONS-----------
+% \section{Positions}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Lead Coordinator}{Sep 2022 -- Jan 2023}
+%       {CSI (Computer Society of India)}{}
+%       \resumeItemListStart
+%         \resumeItem{Hosted events like workshops, hackathons.}
+%         \resumeItem{Managed teams, coordinated activities.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Intern}{Jan 2022 -- Mar 2022}
+%       {Clustrex Data Pvt. Ltd.}{}
+%       \resumeItemListStart
+%         \resumeItem{Trained on .NET framework, participated in development projects.}
+%         \resumeItem{Worked with a team to design and develop features for ongoing projects.}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+\end{document}
